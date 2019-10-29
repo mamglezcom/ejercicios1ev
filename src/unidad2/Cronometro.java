@@ -24,7 +24,7 @@ public class Cronometro {
 		// capturamos momento actual en ms.
 		inicioContador = System.currentTimeMillis(); 
 		
-		// preguntamos por consola el nombre
+		// preguntamos por consola el nombre 
 		System.out.println("Escribe tu nombre:");
 		nombre = br.readLine();
 		
