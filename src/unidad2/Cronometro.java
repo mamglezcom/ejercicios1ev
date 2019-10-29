@@ -22,7 +22,7 @@ public class Cronometro {
 		BufferedReader br = new BufferedReader (isr);
 		
 		// capturamos momento actual en ms.
-		inicioContador = System.currentTimeMillis();
+		inicioContador = System.currentTimeMillis(); 
 		
 		// preguntamos por consola el nombre
 		System.out.println("Escribe tu nombre:");
@@ -33,6 +33,13 @@ public class Cronometro {
 		
 		//realizamos la resta en ms y dividimos entre mil para obtener segundos
 		resultadoEnMillisegundos = ((finalContador-inicioContador) / 1000);
+		
+		//sacamos por consola el resultado
+		System.out.print("Hola " + nombre + ", " + "has tardado ");
+		System.out.printf("%.3f",resultadoEnMillisegundos);
+		System.out.print(" segundos en decir tu nombre");
+		
+		
 
 	}
 }
