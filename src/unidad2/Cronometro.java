@@ -3,6 +3,9 @@ package unidad2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Cronometro {
 
@@ -30,14 +33,6 @@ public class Cronometro {
 		
 		//realizamos la resta en ms y dividimos entre mil para obtener segundos
 		resultadoEnMillisegundos = ((finalContador-inicioContador) / 1000);
-		
-		//sacamos por consola el resultado
-		System.out.print("Hola " + nombre + ", " + "has tardado ");
-		System.out.printf("%.3f",resultadoEnMillisegundos);
-		System.out.print(" segundos en decir tu nombre");
-		
-		
 
 	}
-
 }
