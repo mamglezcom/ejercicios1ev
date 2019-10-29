@@ -33,6 +33,13 @@ public class Cronometro {
 		
 		//realizamos la resta en ms y dividimos entre mil para obtener segundos
 		resultadoEnMillisegundos = ((finalContador-inicioContador) / 1000);
+		
+		//sacamos por consola el resultado
+		System.out.print("Hola " + nombre + ", " + "has tardado ");
+		System.out.printf("%.3f",resultadoEnMillisegundos);
+		System.out.print(" segundos en decir tu nombre");
+		
+		
 
 	}
 }
